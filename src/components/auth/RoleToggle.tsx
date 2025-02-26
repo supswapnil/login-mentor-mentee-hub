@@ -9,10 +9,10 @@ export const RoleToggle = ({
   setRole
 }: RoleToggleProps) => {
   return <div className="flex gap-4 mb-8 mx-[75px]">
-      <button onClick={() => setRole('mentee')} className="mx-0 bg-[#9b0060] font-normal rounded-lg px-[10px]">
+      <button onClick={() => setRole('mentee')} className="mx-0 rounded-md bg-[#9b0060]">
         Mentee
       </button>
-      <button onClick={() => setRole('mentor')} className="my-[2px] bg-[0] rounded-md text-base bg-[#9b0060] mx-[75px] px-[10px]">
+      <button onClick={() => setRole('mentor')} className="my-[2px] bg-[0] rounded-md text-base bg-[#9b0060] mx-[75px]">
         Mentor
       </button>
     </div>;
