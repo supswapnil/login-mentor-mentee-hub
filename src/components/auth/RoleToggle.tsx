@@ -1,35 +1,19 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-
 interface RoleToggleProps {
   role: 'mentee' | 'mentor';
   setRole: (role: 'mentee' | 'mentor') => void;
 }
-
-export const RoleToggle = ({ role, setRole }: RoleToggleProps) => {
-  return (
-    <div className="flex gap-4 mb-8">
-      <button
-        onClick={() => setRole('mentee')}
-        className={`px-6 py-2 rounded-lg transition-all duration-300 ${
-          role === 'mentee'
-            ? 'bg-secondary text-white'
-            : 'bg-transparent text-gray-400 hover:text-white'
-        }`}
-      >
+export const RoleToggle = ({
+  role,
+  setRole
+}: RoleToggleProps) => {
+  return <div className="flex gap-4 mb-8 mx-[75px]">
+      <button onClick={() => setRole('mentee')} className="mx-0 rounded-md bg-[#9b0060]">
         Mentee
       </button>
-      <button
-        onClick={() => setRole('mentor')}
-        className={`px-6 py-2 rounded-lg transition-all duration-300 ${
-          role === 'mentor'
-            ? 'bg-secondary text-white'
-            : 'bg-transparent text-gray-400 hover:text-white'
-        }`}
-      >
+      <button onClick={() => setRole('mentor')} className="my-[2px] bg-[0] rounded-md text-base bg-[#9b0060] mx-[75px]">
         Mentor
       </button>
-    </div>
-  );
+    </div>;
 };

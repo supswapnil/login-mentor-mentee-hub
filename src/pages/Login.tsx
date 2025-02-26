@@ -1,82 +1,85 @@
-
 import { useState } from 'react';
 import { AuthLayout } from '../components/auth/AuthLayout';
 import { RoleToggle } from '../components/auth/RoleToggle';
 import { motion } from 'framer-motion';
-
 const Login = () => {
   const [role, setRole] = useState<'mentee' | 'mentor'>('mentee');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
   };
-
-  return (
-    <AuthLayout type="login">
+  return <AuthLayout type="login">
       <div className="max-w-md mx-auto">
-        <img src="/logo.png" alt="Logo" className="h-8 mb-8" />
+        <img alt="Logo" className="h-8 mb-8" src="/lovable-uploads/ee9fcbfa-fb60-40c3-95e8-5d7f5385ab4a.png" />
         <RoleToggle role={role} setRole={setRole} />
         
         <form onSubmit={handleSubmit} className="space-y-6">
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-secondary transition-all duration-300"
-            />
+          <motion.div initial={{
+          y: 20,
+          opacity: 0
+        }} animate={{
+          y: 0,
+          opacity: 1
+        }} transition={{
+          duration: 0.5
+        }}>
+            <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className="w-full px-4 py-3 rounded-lg bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-secondary transition-all duration-300" />
           </motion.div>
           
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-secondary transition-all duration-300"
-            />
+          <motion.div initial={{
+          y: 20,
+          opacity: 0
+        }} animate={{
+          y: 0,
+          opacity: 1
+        }} transition={{
+          duration: 0.5,
+          delay: 0.1
+        }}>
+            <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} className="w-full px-4 py-3 rounded-lg bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-secondary transition-all duration-300" />
           </motion.div>
           
-          <motion.button
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            type="submit"
-            className="w-full py-3 rounded-lg bg-secondary text-white font-semibold hover:bg-secondary/90 transition-all duration-300"
-          >
+          <motion.button initial={{
+          y: 20,
+          opacity: 0
+        }} animate={{
+          y: 0,
+          opacity: 1
+        }} transition={{
+          duration: 0.5,
+          delay: 0.2
+        }} type="submit" className="w-full py-3 rounded-lg text-white font-semibold transition-all duration-300 bg-[#9b0060]">
             Login
           </motion.button>
         </form>
 
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-sm text-gray-400 mt-4 text-center"
-        >
+        <motion.p initial={{
+        y: 20,
+        opacity: 0
+      }} animate={{
+        y: 0,
+        opacity: 1
+      }} transition={{
+        duration: 0.5,
+        delay: 0.3
+      }} className="text-sm text-gray-400 mt-4 text-center">
           <a href="/forgot-password" className="hover:text-white transition-colors duration-300">
             Forgot Password?
           </a>
         </motion.p>
 
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-8"
-        >
+        <motion.div initial={{
+        y: 20,
+        opacity: 0
+      }} animate={{
+        y: 0,
+        opacity: 1
+      }} transition={{
+        duration: 0.5,
+        delay: 0.4
+      }} className="mt-8">
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-600"></div>
@@ -98,8 +101,6 @@ const Login = () => {
           </div>
         </motion.div>
       </div>
-    </AuthLayout>
-  );
+    </AuthLayout>;
 };
-
 export default Login;
