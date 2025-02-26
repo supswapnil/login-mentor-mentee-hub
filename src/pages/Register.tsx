@@ -13,7 +13,7 @@ const Register = () => {
   };
   return <AuthLayout type="register">
       <div className="max-w-md mx-auto">
-        <img alt="Logo" src="/lovable-uploads/00a7219e-8940-401d-b222-da4486dabb11.png" className="h-10 mb-8" />
+        <img alt="Logo" src="/lovable-uploads/00a7219e-8940-401d-b222-da4486dabb11.png" className="h-10 mb-8 object-scale-down" />
         <RoleToggle role={role} setRole={setRole} />
         
         <form onSubmit={handleSubmit} className="space-y-6">
