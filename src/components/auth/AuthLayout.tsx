@@ -33,7 +33,7 @@ export const AuthLayout = ({
         opacity: 1
       }} transition={{
         duration: 0.5
-      }} className="w-[60%] p-12">
+      }} className="w-[60%] p-12 bg-[#f0f4f8]">
             {children}
           </motion.div>
         </> : <>
@@ -45,7 +45,7 @@ export const AuthLayout = ({
         opacity: 1
       }} transition={{
         duration: 0.5
-      }} className="w-[60%] p-12">
+      }} className="w-[60%] p-12 bg-[#e8e8e8]">
             {children}
           </motion.div>
           <motion.div initial={{
@@ -56,7 +56,7 @@ export const AuthLayout = ({
         opacity: 1
       }} transition={{
         duration: 0.5
-      }} className="w-[40%] bg-primary p-12 flex flex-col items-center justify-center text-white">
+      }} className="w-[40%] p-12 flex flex-col items-center justify-center text-white bg-[#336dce]">
             <h1 className="text-4xl font-bold mb-4">Welcome Back!</h1>
             <p className="text-lg mb-8">Already have an account? Sign in to continue your journey</p>
             <button onClick={() => window.location.href = '/login'} className="px-8 py-3 rounded-lg bg-transparent border-2 border-white hover:bg-white hover:text-primary transition-all duration-300">
