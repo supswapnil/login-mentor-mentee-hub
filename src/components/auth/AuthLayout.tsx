@@ -21,7 +21,7 @@ export const AuthLayout = ({
       }} className="w-[40%] p-12 flex flex-col items-center justify-center text-white bg-[#336dce]">
             <h1 className="text-4xl font-bold mb-4">Welcome</h1>
             <p className="text-lg mb-8">Join our community of learners and mentors</p>
-            <button onClick={() => window.location.href = '/register'} className="px-8 py-3 rounded-lg bg-transparent border- b3order-white hover:bg-white hover:text-primary transition-all duration-300 font-semibold">
+            <button onClick={() => window.location.href = '/register'} className="px-8 py-3 rounded-lg bg-transparent border- b2order-white hover:bg-white hover:text-primary transition-all duration-300 font-semibold">
               Register
             </button>
           </motion.div>

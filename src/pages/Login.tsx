@@ -12,7 +12,7 @@ const Login = () => {
   };
   return <AuthLayout type="login">
       <div className="max-w-md mx-auto">
-        <img alt="Logo" className="h-8 mb-8" src="/lovable-uploads/ee9fcbfa-fb60-40c3-95e8-5d7f5385ab4a.png" />
+        <img alt="Logo" src="/lovable-uploads/ee9fcbfa-fb60-40c3-95e8-5d7f5385ab4a.png" className="h-8 mb-8 object-scale-down" />
         <RoleToggle role={role} setRole={setRole} />
         
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -91,11 +91,11 @@ const Login = () => {
 
           <div className="mt-6 grid grid-cols-2 gap-4">
             <button className="flex items-center justify-center px-4 py-2 border border-gray-600 rounded-lg hover:bg-white/5 transition-all duration-300">
-              <img src="/google.svg" alt="Google" className="w-5 h-5 mr-2" />
+              <img alt="Google" className="w-10 h-10 mr-3" src="/lovable-uploads/f8cbf95b-cd3a-4210-b028-2979ed5e72a6.png" />
               Google
             </button>
             <button className="flex items-center justify-center px-4 py-2 border border-gray-600 rounded-lg hover:bg-white/5 transition-all duration-300">
-              <img src="/facebook.svg" alt="Facebook" className="w-5 h-5 mr-2" />
+              <img alt="Facebook" className="w-5 h-5 mr-2" src="/lovable-uploads/ef5e551e-7721-4b82-bbc0-b696bc69dbe3.png" />
               Facebook
             </button>
           </div>
