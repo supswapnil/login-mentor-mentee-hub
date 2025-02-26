@@ -12,7 +12,7 @@ const Login = () => {
   };
   return <AuthLayout type="login">
       <div className="max-w-md mx-auto">
-        <img alt="Logo" src="/lovable-uploads/ee9fcbfa-fb60-40c3-95e8-5d7f5385ab4a.png" className="h-8 mb-8 object-scale-down" />
+        <img alt="Logo" src="/lovable-uploads/ee9fcbfa-fb60-40c3-95e8-5d7f5385ab4a.png" className="h-10 mb-8 object-scale-down" />
         <RoleToggle role={role} setRole={setRole} />
         
         <form onSubmit={handleSubmit} className="space-y-6">
